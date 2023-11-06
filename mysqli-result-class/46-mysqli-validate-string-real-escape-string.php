@@ -28,3 +28,10 @@ finally {
         $mysqli->close();
     }
 }
+
+// 2 object ($mysqli, $e)
+// 5 method (query(), real_escape_string(), getMessage(), getCode(), close())
+// 3 property (error, errno, num_rows)
+// 2 class (Exception, mysqli)
+
+// isset() -> function prosedural
