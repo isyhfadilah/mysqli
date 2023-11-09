@@ -35,5 +35,3 @@ finally {
 // 2 class (Exception, mysqli)
 
 // isset() -> function prosedural
-
-// mengajari ninis
