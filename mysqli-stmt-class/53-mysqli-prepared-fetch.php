@@ -3,7 +3,7 @@ $mysqli = new mysqli("localhost", "root", "", "ilkoom");
 
 $stmt = $mysqli->prepare("SELECT * FROM barang WHERE id_barang = ?");
 $stmt->bind_param("i", $id_barang);
-$id_barang = 2;
+$id_barang = 3;
 
 $stmt->execute();
 

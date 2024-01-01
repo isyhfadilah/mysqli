@@ -9,7 +9,7 @@ $stmt = $mysqli->prepare($query);
 $stmt->bind_param("i", $id_barang);
 
 // input data 1
-$id_barang = 2;
+$id_barang = 3;
 $stmt->execute();
 $result = $stmt->get_result();
 $row = $result->fetch_row();
