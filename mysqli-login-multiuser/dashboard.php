@@ -29,5 +29,7 @@ if($_SESSION['id'] == null) {
         }
         ?>
     </div>
+
+    <a href="process/process-logout.php">Logout</a>
 </body>
 </html>
