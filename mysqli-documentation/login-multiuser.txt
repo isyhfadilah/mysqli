@@ -1,0 +1,67 @@
+DOKUMENTASI LOGIN MULTIUSER
+
+---------------------------------------------------------------------------------
+
+require_once -> embed(paste) PHP code from another file
+
+---------------------------------------------------------------------------------
+
+$_POST
+super global variable which is used to collect form data after submitting an HTML form method="post". also widely used to pass variables.
+when a user submits the data by clicking on "submit", the form data is sent to the file specified in the "action attribute" of the <form> tag. we can point to the file itself for processing form data.
+
+if you wish to use another PHP file to process form data, replace that with the filename of your choice. then, we can use the super global variable $_POST to collect the value of the input field.
+
+---------------------------------------------------------------------------------
+
+$_GET
+super global variable which is used to collect form data after submitting an HTML form with method="get". also collect data sent in the URL.
+
+---------------------------------------------------------------------------------
+
+mysqli_query() -> function performs a query against a database.
+
+object oriented style 
+$mysqli -> query(query, resultmode)
+
+procedural style
+mysqli_query(connection, query, resultmode)
+
+---------------------------------------------------------------------------------
+
+mysqli_num_rows() -> function returns the number of rows(jumlah baris) in a result set(kumpulan hasil).
+mysqli_num_rows(result);
+
+---------------------------------------------------------------------------------
+
+mysqli_fetch_assoc() -> function fetches a result row as an associative array.
+
+object oriented style
+$mysqli_result -> fetch_assoc()
+
+procedural style
+mysqli_fetch_assoc(result)
+
+---------------------------------------------------------------------------------
+
+SESSION
+
+session variable hold information about one single user, and are available(tersedia) to all pages in one application.
+
+a session started with the session_start() function.
+
+session varibles are set with the PHP global variable: $_SESSION
+
+to remove all global session variables and destroy(menghancurkan) the session use : 
+session_unset() -- remove
+session_destroy() -- destroy
+
+---------------------------------------------------------------------------------
+
+header()
+
+send a raw HTTP header
+
+remember that header() must be called before any actual output is sent, either by normal HTML tags, blank lines in a file, or from PHP. it is a very common error to read code with include, or require, functions, or another file access function, and have spaces or empty lines that are output before header() is called. the same problem exists(terjadi/ada) when using a single PHP/HTML file.
+
+---------------------------------------------------------------------------------
