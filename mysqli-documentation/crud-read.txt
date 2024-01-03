@@ -1,0 +1,63 @@
+DOCUMENTATION CRUD READ
+
+---------------------------------------------------------------------------------
+
+__construct()
+
+a constructor allows you to initialize an object's properties upon creation of the object.
+
+if you create a __construct() function, PHP will automatically call this function when you create an object from a class.
+
+it can be reduces the amount(jumlah) of code.
+
+---------------------------------------------------------------------------------
+
+$this
+
+a keyword $this references the current(saat ini) object class. this keyword allows you to access the properties and methods of the current object within(di dalam) the class using the object operator (->).
+
+the $this keyword is only available within a class. It doesn't exist(ada) outside of the class (can getting error).
+
+when you access an object propery using the $this keyword, you use the $ with this keyword only. And you don't use $ with the name property. 
+
+---------------------------------------------------------------------------------
+
+while()
+
+the while loop executes a block of code as long as the specified(ditentukan) condition is true.
+
+it doesn't run a specific number of times(beberapa kali), but checks after each(setiap) iteration if the condition is still true.
+
+the condition doesn't have to be a counter, it could(bisa) be the status of an operation or any condition that evaluates to either(salah satu?) true or false.
+
+with the break statement we can stop the loop even if the condition is still true.
+
+with the continue statement we can stop the current iteration, and continue with the next
+
+alternative syntax -> can also be written with the endwhile statement.
+
+---------------------------------------------------------------------------------
+
+return 
+
+---------------------------------------------------------------------------------
+
+array
+
+---------------------------------------------------------------------------------
+
+mysqli_fetch_array()
+
+---------------------------------------------------------------------------------
+
+include
+
+---------------------------------------------------------------------------------
+
+foreach()
+
+the most common use of the foreach loop, is to loop through the items of an array.
+
+~~ not finished yet
+
+---------------------------------------------------------------------------------
