@@ -6,6 +6,7 @@
     <title>CRUD OOP</title>
 </head>
 <body>
+    <a href="input-data.php">TAMBAH DATA</a>
     <table>
         <tr>
             <th>NO</th>
