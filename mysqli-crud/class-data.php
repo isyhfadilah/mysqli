@@ -6,19 +6,23 @@ class Siswa {
     private $username = 'root';
     private $pass = '';
     private $database = 'crud';
-    private $con;
+    private $conn;
 
     function __construct() {
-        $this->con = mysqli_connect($this->host, $this->username, $this->pass, $this->database);
+        $this->conn = mysqli_connect($this->host, $this->username, $this->pass, $this->database);
     }
 
     function tampil_data() {
-        $query = mysqli_query($this->con, 'SELECT * FROM siswa');
+        $query = mysqli_query($this->conn, 'select * from siswa');
 
         while($row = mysqli_fetch_array($query)) {
             $data[] = $row;
         }
 
         return $data;
+    }
+
+    function simpan_data($nama, $tanggal, $kelas) {
+        $query = mysqli_query($this->conn, "insert into siswa values('', '$nama', '$tanggal', '$kelas')");
     }
 }
