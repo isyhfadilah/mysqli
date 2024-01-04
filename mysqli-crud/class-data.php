@@ -25,4 +25,14 @@ class Siswa {
     function simpan_data($nama, $tanggal, $kelas) {
         $query = mysqli_query($this->conn, "insert into siswa values('', '$nama', '$tanggal', '$kelas')");
     }
+
+    function tampil_update($id) {
+        $query = mysqli_query($this->conn, "select * from siswa where id='$id'");
+
+        while($row = mysqli_fetch_array($query)) {
+            $data[] = $row;
+        }
+
+        return $data;
+    }
 }
