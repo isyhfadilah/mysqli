@@ -6,7 +6,7 @@
     <title>Form Input</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="aksi-input.php" method="post">
         <table border="1">
             <tr>
                 <td>NAMA SISWA</td>
