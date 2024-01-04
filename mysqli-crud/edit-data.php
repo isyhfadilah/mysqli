@@ -6,13 +6,13 @@
     <title>Form Edit</title>
 </head>
 <body>
+    <form action="aksi-edit.php" method="post">
     <?php
     $id = $_GET['id'];
     include 'class-data.php';
     $siswa = new Siswa();
     foreach($siswa->tampil_update($id) as $data) {
     ?>
-    <form action="aksi-edit.php" method="post">
         <table border="1">
             <tr>
                 <td>NAMA SISWA</td>
@@ -39,9 +39,9 @@
                 </td>
             </tr>
         </table>
-    </form>
-    <?php
+        <?php
     }
     ?>
+    </form>
 </body>
 </html>
