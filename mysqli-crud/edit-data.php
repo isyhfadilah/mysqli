@@ -12,7 +12,7 @@
     $siswa = new Siswa();
     foreach($siswa->tampil_update($id) as $data) {
     ?>
-    <form action="aksi-input.php" method="post">
+    <form action="aksi-edit.php" method="post">
         <table border="1">
             <tr>
                 <td>NAMA SISWA</td>
@@ -35,7 +35,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="submit" value='SIMPAN DATA'>
+                    <input type="submit" value='UPDATE DATA'>
                 </td>
             </tr>
         </table>

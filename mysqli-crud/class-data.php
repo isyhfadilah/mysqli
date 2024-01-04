@@ -35,4 +35,8 @@ class Siswa {
 
         return $data;
     }
+
+    function update_data($id, $nama, $tanggal, $kelas) {
+        mysqli_query($this->conn, "update siswa set nama='$nama', tanggal='$tanggal', kelas="$kelas where id="$id");
+    }
 }
