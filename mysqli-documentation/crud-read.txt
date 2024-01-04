@@ -40,9 +40,26 @@ alternative syntax -> can also be written with the endwhile statement.
 
 return 
 
+the return keyword ends a function and optionally, uses the result of an expression as the return value of the function.
+
+if return is used outside of a function, it stops PHP code in the file from running. if the file was included using include, include_once, require and require_once, the result of the expression is used as return value of the include statements.
+
 ---------------------------------------------------------------------------------
 
 array
+
+an array is special variable that can hold(menampung) many values under a single nama, and you can acces the values by referring(mengacu) to an index number or name.
+
+there are three types of array
+- indexed arrays -> with numeric index
+- associative arrays -> with named keys
+- multidimensional arrays -> containing(berisi) one or more arrays 
+
+array items can be of any data type.
+
+the most common are strings and numbers, but array items can also be objects, functions or even arrays. you can have different data types in the same array.
+
+the real strength of PHP arrays are the built-in(bawaan) array functions, like the count() for counting(menghitung) array items.
 
 ---------------------------------------------------------------------------------
 
