@@ -39,4 +39,8 @@ class Siswa {
     function update_data($id, $nama, $tanggal, $kelas) {
         mysqli_query($this->conn, "update siswa set nama='$nama', tanggal='$tanggal', kelas='$kelas' where id='$id'");
     }
+
+    function hapus_data($id) {
+        mysqli_query($this->conn, "delete from siswa where id='$id'");
+    }
 }

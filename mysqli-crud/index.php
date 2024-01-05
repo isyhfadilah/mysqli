@@ -26,7 +26,7 @@
             <td><?= $data['tanggal'] ?></td>
             <td><?= $data['kelas'] ?></td>
             <td>
-                <a href="edit-data.php?id=<?= $data['id'] ?>">EDIT</a> | <a href="">HAPUS</a>
+                <a href="edit-data.php?id=<?= $data['id'] ?>">EDIT</a> | <a href="aksi-hapus.php?id=<?= $data['id'] ?>">HAPUS</a>
             </td>
         </tr>
         <?php  
