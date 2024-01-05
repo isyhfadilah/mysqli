@@ -33,7 +33,7 @@
                 </td> 
             </tr>
             <tr>
-                <td></td>
+                <td><input type="hidden" name="id" value="<?= $id ?>"></td>
                 <td>
                     <input type="submit" value='UPDATE DATA'>
                 </td>

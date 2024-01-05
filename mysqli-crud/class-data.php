@@ -37,15 +37,6 @@ class Siswa {
     }
 
     function update_data($id, $nama, $tanggal, $kelas) {
-        $query = "update siswa set nama='$nama', tanggal='$tanggal', kelas='$kelas' where id='$id'";
-        $result = mysqli_query($this->conn, $query);
-
-        if($result) {
-            return true;
-        } else {
-            $error = mysqli_error($this->conn);
-            echo "Error: $error";
-            return false;
-        }
+        mysqli_query($this->conn, "update siswa set nama='$nama', tanggal='$tanggal', kelas='$kelas' where id='$id'");
     }
 }
