@@ -67,7 +67,13 @@ mysqli_fetch_array()
 
 ---------------------------------------------------------------------------------
 
-include
+include/require
+
+it is possible to insert the content of PHP file into another PHP file (before the server executes it), with the include or require statement.
+
+the include and require statements are identical(serupa), expect upon(terjadi) failure:
+- require will produce(menghasilkan) a fatal error (E_COMPILE_ERROR) and stop the script
+- include will only produce a warning(peringatan) (E_WARNING) and the script will continue
 
 ---------------------------------------------------------------------------------
 
