@@ -75,11 +75,17 @@ the include and require statements are identical(serupa), expect upon(terjadi) f
 - require will produce(menghasilkan) a fatal error (E_COMPILE_ERROR) and stop the script
 - include will only produce a warning(peringatan) (E_WARNING) and the script will continue
 
+so if you want the execution to go on(berjalan) and show users the output, even if the include file is missing(tidak ada), use the include statement. Otherwise, in case of framework, cms or complex PHP application coding, always use the require statement to include a key file to the flow of execution. This will help avoid(menghindari) compromising(gangguan) your application's security and integrity, just in-case(berjaga-jaga) one key file is accidentally(tidak sengaja) missing.
+
+including files saves(menghemat) a lot of work. this means that you can create a standart header, footer or menu file for all your web pages. then, when the header needs to be updated, you can only update the header include file.
+
 ---------------------------------------------------------------------------------
 
 foreach()
 
 the most common use of the foreach loop, is to loop through the items of an array.
+
+the default array use an indexed, where the first item has the key 0, the second item has the key 1, and so on. but associative arrays are different, it use named keys that you assign(tetapkan) to them, and when looping through associative array, you might want to keep(menyimpan) the key as well as the value.
 
 ~~ not finished yet
 
