@@ -65,6 +65,17 @@ the real strength of PHP arrays are the built-in(bawaan) array functions, like t
 
 mysqli_fetch_array()
 
+the fetch_array() / mysqli_fetch_array() function fetches a result row as an associative array, a numeric array, or both.
+
+important note : fieldnames returned from this function are case-sensitive(peka).
+
+parameter values
+> result : required, specifies a result set identifier
+> resulttype : optional, specifies what type of array that should be produced. 
+  - MYSQLI_ASSOC
+  - MYSQLI_NUM
+  - MYSQLI_BOTH (this is default)
+
 ---------------------------------------------------------------------------------
 
 include/require
@@ -85,8 +96,16 @@ foreach()
 
 the most common use of the foreach loop, is to loop through the items of an array.
 
-the default array use an indexed, where the first item has the key 0, the second item has the key 1, and so on. but associative arrays are different, it use named keys that you assign(tetapkan) to them, and when looping through associative array, you might want to keep(menyimpan) the key as well as the value.
+the default array use an indexed, where the first item has the key 0, the second item has the key 1, and so on. but associative arrays are different, it use named keys that you assign(tetapkan) to them, and when looping through associative array, you might want to keep(menyimpan) the key as well as the value. this can be done by specifying(menentukan) both(keduanya) the key and value in the foreach.
 
-~~ not finished yet
+the property loop can be also used to loop through(mengulangi/melalui) properties of an object.
+
+with the break statement can we stop the loop even if it has not reached(mencapai) the end.
+
+with the continue statement we can stop the current(saat ini) iteration, and continue with next iteration.
+
+when looping through the array items, any changes done to the array items, by default not affect the original array. but, by using the & character in the foreach declaration, the array item is assigned(ditetapkan) by reference, which results in any changes done to the array item will also be done to the original array.
+
+the foreach loop syntax can also be written with the endforeach statement.
 
 ---------------------------------------------------------------------------------
